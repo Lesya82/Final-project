@@ -1,0 +1,138 @@
+
+:root{
+    --main-color: black;
+    font-family: cursive;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+    
+.wrapper {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: auto auto ;   
+}
+     .box {
+        background-color: #FF4500;
+        color: #fff;
+       padding: 5px 20px 5px 20px;
+    }
+
+    .a {
+        grid-column: 1/2 span;
+        grid-row: 1;
+        text-align: start;
+        font-size: 180%;
+    }
+    
+    .b {
+        grid-column: 1 ;
+        grid-row: 2 ;
+    }
+    .c {
+        grid-column: 2;
+        grid-row: 2; 
+    }
+
+header .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}  
+header .text-white a{
+    color: white;
+    text-decoration: none;
+    font-size: 180%;
+    padding: 2px;/*поле навколо тексту*/
+    border: 6px solid #FF4500; 
+}  
+
+ header  a:hover {
+    background:white ; /* Цвет фона под ссылкой */ 
+    color:#FF4500; /* Цвет ссылки */ 
+    border: 2px solid #FF4500; 
+    padding: 2px;/*поле навколо тексту*/
+   } 
+   .background-image{
+  background-image: url(../img/marta.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 480px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0 550px 70px;
+  font-size: 25px;
+  font-family: "Lucida Calligraphy", cursive;
+  text-align: center;
+ }
+
+.aboutme {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 400px 550px ;
+    grid-template-rows: 400px ;
+    margin: 30px 0 30px 0;
+}
+.text-aboutme {
+    grid-column: 1 ;
+    grid-row: 1;
+}
+
+.photome {
+    grid-column: 2 ;
+    grid-row: 1 ;
+    background-image: url(../img/photographer.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h2{
+    text-align: center ;
+    font-size: 35px;
+    color: white;
+    background-color:  rgb(211, 27, 128);;
+    margin: 30px 0 30px 0;
+
+}
+#textAbMe {
+    text-align: justify ;
+    font-size: 25px;
+}
+
+.photoPortfolio{
+    display: flex;
+    margin: 30px 0 30px 0;   
+}
+
+img {
+    padding: 10px;
+}
+
+.in-on-studio{
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.pricing-in-on-studio {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold ;
+    padding: 10px 0 0 10px ;
+}
+.acenter{
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 0 20px 0;
+}
+
