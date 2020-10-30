@@ -56,7 +56,7 @@ header .text-white a{
     padding: 2px;/*поле навколо тексту*/
    } 
    .background-image{
-  background-image: url(../img/marta.jpg);
+  background-image: url(../img/girlmarta.jpg);
   background-position: center;
   background-size: cover;
   min-height: 480px;
