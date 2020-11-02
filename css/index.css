@@ -1,61 +1,61 @@
 
-:root{
-    --main-color: black;
-    font-family: cursive;
-}
+:root {
+  --main-color: black; }
 
 body {
-    max-width: 980px;
-    margin: auto;
+  max-width: 980px;
+  margin: auto;
 }
-    
-.wrapper {
-    display: grid;
-    grid-gap: 0;
-    grid-template-columns: auto auto ;   
+
+.header-nav {
+  display: flex;
+  background-color: #FF4500;
+  padding: 35px 0 35px 10px;
+  align-items: center;
 }
-     .box {
-        background-color: #FF4500;
-        color: #fff;
-       padding: 5px 20px 5px 20px;
-    }
 
-    .a {
-        grid-column: 1/2 span;
-        grid-row: 1;
-        text-align: start;
-        font-size: 180%;
-    }
-    
-    .b {
-        grid-column: 1 ;
-        grid-row: 2 ;
-    }
-    .c {
-        grid-column: 2;
-        grid-row: 2; 
-    }
+header .logo {
+  font-family: "Lucida Calligraphy", cursive;
+  font-size: 1.8rem;
+  text-align: center;
+  background-color: #FF4500;
+  color: white;
+  font-weight: bold;
+  padding: 10px 50px;
+}
 
-header .menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}  
-header .text-white a{
-    color: white;
-    text-decoration: none;
-    font-size: 180%;
-    padding: 2px;/*поле навколо тексту*/
-    border: 6px solid #FF4500; 
-}  
+header .menu-items {
+  flex: 1;
+}
 
- header  a:hover {
-    background:white ; /* Цвет фона под ссылкой */ 
-    color:#FF4500; /* Цвет ссылки */ 
-    border: 2px solid #FF4500; 
-    padding: 2px;/*поле навколо тексту*/
-   } 
-   .background-image{
+header .menu-items {
+  display: block;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-size: 1.2rem;
+}
+
+header .menu-items a:hover {
+  border: 1px solid ;
+  background-color: white;
+  color: #FF4500;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 5px;
+}
+
+header .menu-items a {
+  color: white;
+  font-weight: bold;
+  font-family: "Lucida Calligraphy", cursive;
+  padding: 5px;
+}
+
+img {
+  margin: 10px 0 10px 0;
+}
+
+.background-image {
   background-image: url(../img/girlmarta.jpg);
   background-position: center;
   background-size: cover;
@@ -65,74 +65,227 @@ header .text-white a{
   justify-content: center;
   flex-direction: column;
   padding: 50px 0 550px 70px;
-  font-size: 25px;
+  font-size: 18px;
   font-family: "Lucida Calligraphy", cursive;
   text-align: center;
- }
-
-.aboutme {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: 400px 550px ;
-    grid-template-rows: 400px ;
-    margin: 30px 0 30px 0;
-}
-.text-aboutme {
-    grid-column: 1 ;
-    grid-row: 1;
+  margin: auto;
 }
 
 .photome {
-    grid-column: 2 ;
-    grid-row: 1 ;
-    background-image: url(../img/photographer.jpg);
-    background-position: center;
-    background-size: cover;
+  background-image: url(../img/photographer.jpg);
+  background-position: start;
+  background-size: cover;
+  justify-content: center;
+  min-height: 480px;
+  display: flex;
 }
 
-h2{
-    text-align: center ;
-    font-size: 35px;
-    color: white;
-    background-color:  rgb(211, 27, 128);;
-    margin: 30px 0 30px 0;
-
+.videoPlace {
+  display: flex;
+  margin-left: 200px;
 }
+
+h2 {
+  text-align: center ;
+  font-size: 35px;
+  color: white;
+  background-color: rgb(211, 27, 128);
+  margin: 30px 0 30px 0;
+}
+
 #textAbMe {
-    text-align: justify ;
-    font-size: 25px;
+  display: flex;
+  text-align: justify ;
+  font-size: 18px;
+  padding: 5px 25px 5px 25px;
 }
 
-.photoPortfolio{
-    display: flex;
-    margin: 30px 0 30px 0;   
+.studioContainer {
+  display: flex;
 }
 
-img {
-    padding: 10px;
+#textAboutStudio {
+  display: flex;
+  text-align: justify ;
+  font-size: 15px;
+  padding: 5px 25px 5px 25px;
 }
 
-.in-on-studio{
-    display: flex;
-    justify-content: center;
+.in-on-studio {
+  display: flex;
+  justify-content: center;
 }
 
-h3{
-    text-align: center;
+h3 {
+  text-align: center;
 }
 
 .pricing-in-on-studio {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold ;
-    padding: 10px 0 0 10px ;
-}
-.acenter{
-    text-align: center;
-    font-size: 20px;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: bold;
-    padding: 0 0 20px 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold ;
+  padding: 10px 0 0 10px ;
 }
 
+.acenter {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0 0 20px 0;
+  cursor: pointer;
+}
+
+.clock {
+  color: rgb(211, 27, 128);
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.button-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+button {
+  background-color: white;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 6px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=number], select, textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 6px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 6px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: rgb(211, 27, 128);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: rgb(211, 27, 128);
+  border-color: rgb(211, 27, 128);
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  width: 50%;
+  height: 550px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.containerContacsMap {
+  display: flex;
+  margin: 10px;
+}
+
+@media(min-width: 680px) {
+  .containerContacsMap {
+      display: drid;
+      grid-template-columns: 1fr;
+  }
+}
+
+.adress-center {
+  text-align: center;
+}
+
+.menuFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .menuFooter a {
+  color: black;
+  text-decoration: none;
+  font-size: 120%;
+  padding: 0 10px 20px 5px;
+  /*поле навколо тексту*/
+  font-weight: bold;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icons li {
+  display: inline-block;
+  list-style-type: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.social-icons li a {
+  border-bottom: none;
+}
+
+.social-icons li img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
